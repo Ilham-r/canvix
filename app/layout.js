@@ -1,15 +1,17 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
-const geistSans = localFont({
+const robotoSerif = localFont({
   src: "./fonts/RobotoSerif.ttf",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+  variable: "--font-roboto-serif",
+  weight: "600 700",
 });
-const geistMono = localFont({
-  src: "./fonts/RobotoSerif.ttf",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const dmSans = localFont({
+  src: "./fonts/DMSans.ttf",
+  variable: "--font-dm-sans",
+  weight: "400",
 });
 
 export const metadata = {
@@ -21,9 +23,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${robotoSerif.variable} ${dmSans.variable} antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

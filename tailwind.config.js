@@ -30,6 +30,9 @@ module.exports = {
         h4: "700",
         h5: "600",
       },
+      fontFamily: {
+        roboto: ["var(--font-roboto-serif)", "serif"],
+      },
     },
   },
   plugins: [],
