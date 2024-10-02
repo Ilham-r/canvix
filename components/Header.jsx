@@ -6,14 +6,16 @@ const NavLink = ({ text }) => (
   <Link
     href="/"
     className="cursor-pointer font-[20px]  transition-colors duration-200 hover:text-LightGreen"
+    onClick={() => setIsOpen(false)}
   >
     {text}
   </Link>
 );
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header className="w-full flex py-3 px-20 items-center justify-center max-md:px-10 ">
+    <header className="w-full absolute flex py-3 px-10 items-center justify-center max-md:px-10 ">
       <div className="flex w-[80%] justify-between  items-center max-lg:w-full ">
         <div className="flex items-center gap-1">
           <svg
@@ -36,32 +38,40 @@ const Header = () => {
               fill="#000"
             />
           </svg>
-          <h4 className="font-roboto">Canvix</h4>
+          <h5 className="font-roboto text-h5">Canvix</h5>
         </div>
-
-        <div className="flex w-[70%] justify-between items-center">
-          <ul className="flex gap-5">
-            <li>
-              <NavLink text="Home" />
-            </li>
-            <li>
-              <NavLink text="Potfolio" />
-            </li>
-            <li>
-              <NavLink text="About" />
-            </li>
-            <li>
-              <NavLink text="Contact Us" />
-            </li>
-          </ul>
-          <Button className="" text="Get in touch" />
-        </div>
-
         <div
-          className="md:hidden"
-          onClick={() => setIsOpen((prevState) => !prevState)}
+          className={`flex w-[70%]  max-md:fixed max-md:top-0 max-md:bg-bgColor sidebar-before max-md:left-0 max-md:w-full ${
+            isOpen ? "max-md:disaply " : "max-md:hidden"
+          }`}
         >
-          <input id="checkbox2" type="checkbox" />
+          <div
+            className={`flex w-full justify-between items-center max-md:flex-col max-md z-10 `}
+          >
+            <ul className="flex gap-5 max-md:block z-10  max-md:items-start max-md:flex max-md:flex-col max-md:min-h-screen max-md:justify-center  max-md:p-6 max-md:overflow-hidden max-md:px-4">
+              <li>
+                <NavLink text="Home" />
+              </li>
+              <li>
+                <NavLink text="Potfolio" />
+              </li>
+              <li>
+                <NavLink text="About" />
+              </li>
+              <li>
+                <NavLink text="Contact Us" />
+              </li>
+            </ul>
+            <Button text="Get in touch" />
+          </div>
+        </div>
+
+        <div className="md:hidden ">
+          <input
+            id="checkbox2"
+            type="checkbox"
+            onClick={() => setIsOpen((prevState) => !prevState)}
+          />
           <label class="toggle toggle2" for="checkbox2">
             <div id="bar4" class="bars"></div>
             <div id="bar5" class="bars"></div>

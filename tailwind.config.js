@@ -21,7 +21,7 @@ module.exports = {
         h5: ["30px"],
         h6: ["20px"],
         Bodytext: ["18px"],
-        bodysmall: ["16px"],
+        bodysmall: ["14px"],
       },
       fontWeight: {
         h1: "600", // Semi-bold
