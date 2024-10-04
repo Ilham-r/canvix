@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
-const Process = () => {
+const AboutUs = () => {
   return (
     <div className="flex p-10 justify-center items-center max-lg:flex-col bg-black min-h-screen ">
       <div className="flex w-[80%] h-full max-lg:w-full max-lg:flex-col ">
@@ -54,4 +54,4 @@ const Process = () => {
   );
 };
 
-export default Process;
+export default AboutUs;
