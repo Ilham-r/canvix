@@ -1,5 +1,6 @@
 import AboutUs from "./sections/AboutUs";
 import Hero from "./sections/Hero";
+import Process from "./sections/Process";
 
 import Services from "./sections/Services";
 
@@ -9,6 +10,7 @@ const HomePage = () => {
       <Hero />
       <Services />
       <AboutUs />
+      <Process />
     </>
   );
 };
