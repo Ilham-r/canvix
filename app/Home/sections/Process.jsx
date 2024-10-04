@@ -32,11 +32,11 @@ const Process = () => {
           </p>
           <div className="flex gap-10 ">
             <div className=" flex flex-col gap-3">
-              <p className="text-LightGreen text-h6 font-roboto">330 +</p>
+              <p className="text-LightGreen text-h5 font-roboto">330 +</p>
               <p> Companies helped</p>
             </div>
             <div className=" flex flex-col gap-3">
-              <p className="text-LightGreen text-h6 font-roboto">230 +</p>
+              <p className="text-LightGreen text-h5 font-roboto">230 +</p>
               <p>Revenue generated</p>
             </div>
           </div>
