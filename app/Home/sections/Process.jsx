@@ -1,10 +1,13 @@
 import IdeaCard from "@/components/IdeaCard";
+import ProjectCard from "@/components/ProjectCard";
 import {
   faLightbulb,
   faEnvelope,
   faSliders,
   faCheckCircle,
+  faArrowAltCircleRight,
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const List = [
   [
     faLightbulb,
@@ -41,6 +44,42 @@ const Process = () => {
           ))}
         </div>
         <p className="font-roboto text-h5">Recent Showcase</p>
+        <div className="flex w-full gap-16 mt-10  max-md:flex-col ">
+          <div className="flex flex-col  w-1/2  max-md:w-full">
+            <ProjectCard
+              image="./images/project1.png"
+              title="Web UI design"
+              text="Creative  UI design"
+            />
+
+            <ProjectCard
+              image="./images/project2.png"
+              title="UI Design"
+              text="Creative Rebranding for logo"
+            />
+          </div>
+          <div className="flex flex-col gap-7 w-1/2 pt-16 items-end  max-md:w-full ">
+            <div className="bg-black cursor-pointer transition-colors   text-white flex w-[230px] p-1 gap-5 items-center rounded-full">
+              <FontAwesomeIcon
+                icon={faArrowAltCircleRight}
+                width={30}
+                height={30}
+              />
+              <p>Start your free trial</p>
+            </div>
+            <ProjectCard
+              image="./images/project3.png"
+              title="To design Digital Strategy"
+              text="Social Media Marketing"
+            />
+
+            <ProjectCard
+              image="./images/project4.png"
+              title="UI design"
+              text="Creative Rebranding for logo"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
