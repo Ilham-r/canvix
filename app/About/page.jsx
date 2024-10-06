@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "./sections/Hero";
-import Services from "./sections/services";
+import Services from "./sections/Services";
 import Missions from "./sections/Missions";
 import Team from "./sections/Team";
 import Contact from "./sections/Contact";
