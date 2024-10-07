@@ -2,9 +2,9 @@
 import Link from "next/link";
 import Button from "./Button";
 import { useState } from "react";
-const NavLink = ({ text }) => (
+const NavLink = ({ text, to }) => (
   <Link
-    href="/"
+    href={to}
     className="cursor-pointer font-[20px]  transition-colors duration-200 hover:text-LightGreen"
     onClick={() => setIsOpen(false)}
   >
@@ -50,16 +50,16 @@ const Header = () => {
           >
             <ul className="flex gap-5 max-md:block z-10  max-md:items-start max-md:flex max-md:flex-col max-md:min-h-screen max-md:justify-center  max-md:p-6 max-md:overflow-hidden max-md:px-4">
               <li>
-                <NavLink text="Home" />
+                <NavLink text="Home" to="/Home" />
               </li>
               <li>
-                <NavLink text="Potfolio" />
+                <NavLink text="Portfolio" to="/Portfolio" />
               </li>
               <li>
-                <NavLink text="About" />
+                <NavLink text="About" to="/About" />
               </li>
               <li>
-                <NavLink text="Contact Us" />
+                <NavLink text="Contact Us" to="/" />
               </li>
             </ul>
             <Button text="Get in touch" />

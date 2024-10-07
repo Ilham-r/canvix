@@ -5,7 +5,7 @@ import Portfolio from "./Portfolio/page";
 export default function Home() {
   return (
     <div>
-      <Portfolio />
+      <Home />
     </div>
   );
 }
