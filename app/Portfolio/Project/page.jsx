@@ -54,17 +54,17 @@ const Project = () => {
 
         <div className="flex w-full pb-20  items-center justify-center gap-6 max-lg:flex-wrap ">
           <img
-            src="./images/detail1.png"
+            src="/images/detail1.png"
             alt="project detail"
             className="rounded-[20px] w-[300px] h-[300px]  "
           />
           <img
-            src="./images/detail2.png"
+            src="/images/detail2.png"
             alt="project detail"
             className="rounded-[20px] w-[300px] h-[300px]  "
           />
           <img
-            src="./images/detail3.png"
+            src="/images/detail3.png"
             alt="project detail"
             className="rounded-[20px] w-[300px] h-[300px]  "
           />
