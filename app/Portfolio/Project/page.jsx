@@ -2,6 +2,7 @@
 
 import ProjectCard from "@/components/ProjectCard";
 import projects from "@/Utilities/projects";
+import { useEffect } from "react";
 const Project = () => {
   const id = 1;
 
@@ -10,7 +11,9 @@ const Project = () => {
   const filteredProjects = projects.filter((project) => project.id !== id);
 
   const res_projects = filteredProjects.slice(0, 3);
-
+  useEffect(() => {
+    console.log("Project data:", project);
+  }, [project]);
   return (
     <div className=" flex w-full px-10 pt-28 gap-28 min-h-screen items-center  flex-col ">
       <div className="flex w-[80%] items-center gap-14 max-lg:w-full flex-col ">

@@ -8,7 +8,7 @@ const IdeaCard = ({ icon, title, text }) => {
           <FontAwesomeIcon icon={icon} width={25} height={25} />
         </div>
         <img
-          src="./images/vector.png"
+          src="/images/vector.png"
           alt="flesh"
           className=" absolute top-7 left-6 h-40"
         />

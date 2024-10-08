@@ -3,7 +3,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => {
   return (
-    <div className=" flex w-full px-10 min-h-screen justify-center items-center max-lg:py-16">
+    <div className=" flex w-full px-10 pt-7 min-h-screen justify-center items-center max-lg:py-16">
       <div className="flex w-[80%] justify-center  items-center rounded-[20px] max-lg:gap-9  max-lg:w-full max-lg:flex-col p-16 bg-LightBlack text-white max-lg:pb-40">
         <div className="flex w-1/2 justify-center flex-col gap-4 max-lg:w-full">
           <p>Pleasure and so read the was hope.</p>

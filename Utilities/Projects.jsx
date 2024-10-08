@@ -1,7 +1,7 @@
 const projects = [
   {
     id: 1,
-    image: "./images/project1.png",
+    image: "/images/project1.png",
     title: "Web UI Design",
     description: "Creative UI design",
     category: "Cloud solution",
@@ -17,7 +17,7 @@ const projects = [
   },
   {
     id: 2,
-    image: "./images/project2.png",
+    image: "/images/project2.png",
     title: "UI Design",
     description: "Creative rebranding for logo",
     category: "Cloud solution",
@@ -33,7 +33,7 @@ const projects = [
   },
   {
     id: 3,
-    image: "./images/project3.png",
+    image: "/images/project3.png",
     title: "Digital Strategy",
     description: "Social media marketing",
     category: "Cloud solution",
@@ -49,7 +49,7 @@ const projects = [
   },
   {
     id: 4,
-    image: "./images/project4.png",
+    image: "/images/project4.png",
     title: "UI Design",
     description: "Creative rebranding for logo",
     category: "Cloud solution",
@@ -65,7 +65,7 @@ const projects = [
   },
   {
     id: 5,
-    image: "./images/project5.png",
+    image: "/images/project5.png",
     title: "Graphic Design",
     description: "Graphic design",
     category: "Cloud solution",
@@ -81,7 +81,7 @@ const projects = [
   },
   {
     id: 6,
-    image: "./images/project6.png",
+    image: "/images/project6.png",
     title: "UI Design",
     description: "Creative rebranding for logo",
     category: "Cloud solution",
