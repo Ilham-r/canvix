@@ -50,12 +50,14 @@ const Process = () => {
               image="./images/project1.png"
               title="Web UI design"
               text="Creative  UI design"
+              project={true}
             />
 
             <ProjectCard
               image="./images/project2.png"
               title="UI Design"
               text="Creative Rebranding for logo"
+              project={true}
             />
           </div>
           <div className="flex flex-col gap-7 w-1/2 pt-16 items-end  max-md:w-full ">
@@ -71,12 +73,14 @@ const Process = () => {
               image="./images/project3.png"
               title="To design Digital Strategy"
               text="Social Media Marketing"
+              project={true}
             />
 
             <ProjectCard
               image="./images/project4.png"
               title="UI design"
               text="Creative Rebranding for logo"
+              project={true}
             />
           </div>
         </div>
