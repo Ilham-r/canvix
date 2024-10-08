@@ -1,7 +1,7 @@
 "use client";
 import ProjectCard from "@/components/ProjectCard";
 import Button from "@/components/Button";
-import projects from "@/Utilities/projects";
+import projects from "../../Utilities/projects";
 import { useRouter } from "next/navigation";
 
 const Portfolio = () => {
