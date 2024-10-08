@@ -2,9 +2,12 @@
 import { useSearchParams } from "next/navigation";
 import projects from "@/Utilities/projects";
 import ProjectCard from "@/components/ProjectCard";
+import Image from "next/image";
+import { useEffect } from "react";
 const Project = () => {
   const params = useSearchParams();
   const id = params.get("id");
+
   const project = projects.find((project) => project.id === Number(id));
 
   const filteredProjects = projects.filter((project) => project.id !== id);
@@ -53,21 +56,26 @@ const Project = () => {
         </div>
 
         <div className="flex w-full pb-20  items-center justify-center gap-6 max-lg:flex-wrap ">
-          <img
-            src="./images/detail1.png"
+          <Image
+            src="/images/detail1.png"
             alt="project detail"
             className="rounded-[20px] w-[300px] h-[300px]  "
+            width={300}
+            height={300}
           />
-
-          <img
-            src="./images/detail2.png"
+          <Image
+            src="/images/detail2.png"
             alt="project detail"
             className="rounded-[20px] w-[300px] h-[300px]  "
+            width={300}
+            height={300}
           />
-          <img
-            src="./images/detail3.png"
+          <Image
+            src="/images/detail3.png"
             alt="project detail"
             className="rounded-[20px] w-[300px] h-[300px]  "
+            width={300}
+            height={300}
           />
         </div>
         <p className="font-roboto text-h4">Recent Projects </p>
