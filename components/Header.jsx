@@ -5,8 +5,7 @@ import { useState } from "react";
 const NavLink = ({ text, to }) => (
   <Link
     href={to}
-    className="cursor-pointer font-[20px]  transition-colors duration-200 hover:text-LightGreen"
-    onClick={() => setIsOpen(false)}
+    className="cursor-pointer text-[20px]  transition-colors duration-200 hover:text-LightGreen "
   >
     {text}
   </Link>
@@ -42,13 +41,15 @@ const Header = () => {
         </div>
         <div
           className={`flex w-[70%]  max-md:fixed max-md:top-0 max-md:bg-bgColor sidebar-before max-md:left-0 max-md:w-full ${
-            isOpen ? "max-md:disaply " : "max-md:hidden"
+            isOpen
+              ? "max-md:disaply max-md:bg-LightBlack max-md:z-20 max-md:text-white  "
+              : "max-md:hidden"
           }`}
         >
           <div
-            className={`flex w-full justify-between items-center max-md:flex-col max-md z-10 `}
+            className={`flex w-full justify-between items-center max-md:flex-col max-md z-20 `}
           >
-            <ul className="flex gap-5 max-md:block z-10  max-md:items-start max-md:flex max-md:flex-col max-md:min-h-screen max-md:justify-center  max-md:p-6 max-md:overflow-hidden max-md:px-4">
+            <ul className="flex gap-5  z-20  max-md:items-start max-md:flex max-md:flex-col max-md:min-h-screen max-md:justify-center  max-md:p-6 max-md:overflow-hidden max-md:px-4">
               <li>
                 <NavLink text="Home" to="/Home" />
               </li>
@@ -59,14 +60,14 @@ const Header = () => {
                 <NavLink text="About" to="/About" />
               </li>
               <li>
-                <NavLink text="Contact Us" to="/" />
+                <NavLink text="Contact Us" to="/Contact" />
               </li>
             </ul>
             <Button text="Get in touch" />
           </div>
         </div>
 
-        <div className="md:hidden ">
+        <div className="md:hidden z-30 ">
           <input
             id="checkbox2"
             type="checkbox"
