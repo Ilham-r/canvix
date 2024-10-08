@@ -1,7 +1,6 @@
 "use client";
 
 import ProjectCard from "@/components/ProjectCard";
-
 import projects from "@/Utilities/projects";
 const Project = () => {
   const id = 1;
