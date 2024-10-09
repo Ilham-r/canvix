@@ -3,6 +3,7 @@
 import ProjectCard from "@/components/ProjectCard";
 import projects from "@/Utilities/projects";
 import { useEffect } from "react";
+import Image from "next/image";
 const Project = () => {
   const id = 1;
 
@@ -56,20 +57,26 @@ const Project = () => {
         </div>
 
         <div className="flex w-full pb-20  items-center justify-center gap-6 max-lg:flex-wrap ">
-          <img
+          <Image
             src="./images/detail1.png"
             alt="project detail"
             className="rounded-[20px] w-[300px] h-[300px]  "
+            width={300}
+            height={300}
           />
-          <img
+          <Image
             src="./images/detail2.png"
             alt="project detail"
             className="rounded-[20px] w-[300px] h-[300px]  "
+              width={300}
+            height={300}
           />
-          <img
+          <Image
             src="./images/detail3.png"
             alt="project detail"
             className="rounded-[20px] w-[300px] h-[300px]  "
+              width={300}
+            height={300}
           />
         </div>
         <p className="font-roboto text-h4">Recent Projects </p>
