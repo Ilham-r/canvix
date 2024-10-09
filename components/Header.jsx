@@ -6,6 +6,7 @@ const NavLink = ({ text, to }) => (
   <Link
     href={to}
     className="cursor-pointer text-[20px]  transition-colors duration-200 hover:text-LightGreen "
+    onClick={() => setIsOpen(flase)}
   >
     {text}
   </Link>
@@ -14,7 +15,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full absolute flex py-3 px-10 items-center justify-center max-md:px-10 ">
+    <header className="w-full absolute flex py-3 px-10 items-center  bg-white justify-center max-md:px-10 ">
       <div className="flex w-[80%] justify-between  items-center max-lg:w-full ">
         <div className="flex items-center gap-1">
           <svg
@@ -37,19 +38,22 @@ const Header = () => {
               fill="#000"
             />
           </svg>
-          <h5 className="font-roboto text-h5">Canvix</h5>
+          <Link href="/">
+            {" "}
+            <h5 className="font-roboto text-h5 cursor-pointer">Canvix</h5>
+          </Link>
         </div>
         <div
           className={`flex w-[70%]  max-md:fixed max-md:top-0 max-md:bg-bgColor sidebar-before max-md:left-0 max-md:w-full ${
             isOpen
-              ? "max-md:disaply max-md:bg-LightBlack max-md:z-20 max-md:text-white  "
+              ? "max-md:disaply max-md:bg-LightBlack max-md:z-[100] max-md:text-white  "
               : "max-md:hidden"
           }`}
         >
           <div
-            className={`flex w-full justify-between items-center max-md:flex-col max-md z-20 `}
+            className={`flex w-full justify-between items-center max-md:h-screen max-md:flex-col z-[100] max-md:justify-center  `}
           >
-            <ul className="flex gap-5  z-20  max-md:items-start max-md:flex max-md:flex-col max-md:min-h-screen max-md:justify-center  max-md:p-6 max-md:overflow-hidden max-md:px-4">
+            <ul className="flex gap-5  z-[100] max-md:items-start max-md:flex max-md:flex-col  max-md:justify-center  max-md:p-6 max-md:overflow-hidden max-md:px-4">
               <li>
                 <NavLink text="Home" to="/Home" />
               </li>
@@ -67,7 +71,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="md:hidden z-30 ">
+        <div className="md:hidden z-[100] ">
           <input
             id="checkbox2"
             type="checkbox"

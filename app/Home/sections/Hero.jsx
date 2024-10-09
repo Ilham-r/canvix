@@ -8,8 +8,8 @@ import {
 import { faEnvira } from "@fortawesome/free-brands-svg-icons";
 const Hero = () => {
   return (
-    <div className="flex w-full pb-10 px-10  min-h-screen  text-LightGray bg-red-400 justify-end ">
-      <div className="flex relative w-[90%] pt-28 items-center justify-between  ">
+    <div className="flex w-full px-10 text-LightGray h-screen bg-black items-start justify-end ">
+      <div className="flex relative w-[90%]  pt-20 items-center justify-between  ">
         <img
           src="./images/heroimg.png"
           alt="hero images"
@@ -30,7 +30,7 @@ const Hero = () => {
               massa libero egestas malesuada viverra gravida libero cursus nulla
               leo pulvinar.
             </p>
-            <div className="bg-white cursor-pointer transition-colors hover:text-white hover:bg-black duration-500  text-LightBlack flex w-[270px] p-2 gap-5 items-center rounded-full">
+            <div className="bg-white cursor-pointer mt-3 transition-colors hover:text-white hover:bg-black duration-500  text-LightBlack flex w-[270px] p-2 gap-5 items-center rounded-full">
               <FontAwesomeIcon
                 icon={faArrowAltCircleRight}
                 width={30}

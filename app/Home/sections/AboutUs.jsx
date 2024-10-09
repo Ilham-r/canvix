@@ -4,21 +4,21 @@ const AboutUs = () => {
   return (
     <div className="flex p-10 justify-center items-center max-lg:flex-col bg-black min-h-screen ">
       <div className="flex w-[80%] h-full max-lg:w-full max-lg:flex-col ">
-        <div className="flex relative w-1/2 h-full py-72 p-40 max-lg:w-full  ">
+        <div className="flex relative w-1/2 h-full py-72 p-40 max-lg:w-full max-sm:p-10 ">
           <img
             src="./images/processTop.png"
             alt="process"
-            className=" absolute z-20  lg:left-20 top-40 w-[400px] h-[400px] rounded-[20px] "
+            className=" absolute z-20  lg:left-20 top-40 w-[400px] h-[400px] rounded-[20px] max-sm:static max-sm:w-full "
           />
           <img
             src="./images/processT2.png"
             alt="process"
-            className=" absolute z-10 left-12 top-32 opacity-50 w-[400px] h-[400px] rounded-[20px] max-lg:left-32"
+            className=" absolute z-10 left-12 top-32 opacity-50 w-[400px] h-[400px] rounded-[20px] max-lg:left-32 max-sm:hidden"
           />
           <img
             src="./images/processT3.png"
             alt="process"
-            className="absolute z-0 left-5 top-24 opacity-50  w-[400px] h-[400px] rounded-[20px] max-lg:left-24"
+            className="absolute z-0 left-5 top-24 opacity-50  w-[400px] h-[400px] rounded-[20px] max-lg:left-24 max-sm:hidden"
           />
         </div>
         <div className="flex flex-col flex-1 p-6 pl-16 text-white justify-end gap-4">

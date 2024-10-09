@@ -1,20 +1,11 @@
 "use client";
-
-import ProjectCard from "@/components/ProjectCard";
 import projects from "@/Utilities/projects";
-import { useEffect } from "react";
-import Image from "next/image";
+import { useSearchParams } from "next/navigation";
 const Project = () => {
-  const id = 1;
-
+  const searchParams = useSearchParams();
+  const id = searchParams.get("id");
   const project = projects.find((project) => project.id === Number(id));
 
-  const filteredProjects = projects.filter((project) => project.id !== id);
-
-  const res_projects = filteredProjects.slice(0, 3);
-  useEffect(() => {
-    console.log("Project data:", project);
-  }, [project]);
   return (
     <div className=" flex w-full px-10 pt-28 gap-28 min-h-screen items-center  flex-col ">
       <div className="flex w-[80%] items-center gap-14 max-lg:w-full flex-col ">
@@ -54,41 +45,6 @@ const Project = () => {
             <p className="font-roboto">03. The Result</p>
             <p className="text-bodysmall">{project.result}</p>
           </div>
-        </div>
-
-        <div className="flex w-full pb-20  items-center justify-center gap-6 max-lg:flex-wrap ">
-          <Image
-            src="./images/detail1.png"
-            alt="project detail"
-            className="rounded-[20px] w-[300px] h-[300px]  "
-            width={300}
-            height={300}
-          />
-          <Image
-            src="./images/detail2.png"
-            alt="project detail"
-            className="rounded-[20px] w-[300px] h-[300px]  "
-              width={300}
-            height={300}
-          />
-          <Image
-            src="./images/detail3.png"
-            alt="project detail"
-            className="rounded-[20px] w-[300px] h-[300px]  "
-              width={300}
-            height={300}
-          />
-        </div>
-        <p className="font-roboto text-h4">Recent Projects </p>
-        <div className="grid grid-cols-3 gap-12 max-lg:grid-cols-2 max-md:grid-cols-1 pb-28 ">
-          {res_projects?.map((proj) => (
-            <ProjectCard
-              image={proj.image}
-              title={proj.title}
-              text={proj.description}
-              project={true}
-            />
-          ))}
         </div>
       </div>
     </div>

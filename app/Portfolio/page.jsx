@@ -4,7 +4,7 @@ import ProjectCard from "@/components/ProjectCard";
 import Button from "@/components/Button";
 import { useRouter } from "next/navigation";
 import projects from "@/Utilities/projects";
-import Image from "next/image";
+
 const Portfolio = () => {
   const router = useRouter();
 
@@ -13,7 +13,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="flex w-full px-10 pt-28 h-40 gap-28 min-h-screen items-center justify-center flex-col">
+    <div className="flex w-full justify-center items-center gap-28 min-h-screen px-10 pt-28 flex-col ">
       <div className="flex w-[80%] justify-center items-center gap-14 max-lg:w-full flex-col">
         <div className="flex w-full justify-center items-center rounded-[20px] bg-LightBlack text-white p-16">
           <p className="text-h4 font-roboto">Portfolio</p>
