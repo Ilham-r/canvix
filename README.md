@@ -2,7 +2,7 @@
 
 A project created from a Figma design using **Next.js** and **Tailwind CSS**.
 
-![Canvix](/images/thumbnail.png)
+![Canvix](public/images/thumbnail.png)
 
 ## Figma Design
 
@@ -12,20 +12,20 @@ You can view the design [here](<https://www.figma.com/design/gW7jAdqcCNccP8k0nm3
 
 ### Home Page
 
-![Home Page](/images/home.png)
+![Home Page](public/images/home.jpg)
 
 ### About Page
 
-![About Page](/images/aboutus.png)
+![About Page](public/images/aboutus.jpg)
 
 ### Portfolio Page
 
-![Portfolio Page](/images/project.png)
+![Portfolio Page](public/images/project.jpg)
 
 ### Project Detail Page
 
-![Project Page](/images/projectdetail.png)
+![Project Page](public/images/projectdetail.png)
 
 ### Contact Page
 
-![Contact Page](/images/contactus.png)
+![Contact Page](public/images/contactus.jpg)
